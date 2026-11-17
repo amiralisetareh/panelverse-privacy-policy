@@ -1,115 +1,45 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>PanelVerse</title>
-
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 0;
-            min-height: 100vh;
-            font-family: Arial, sans-serif;
-            background: #0b0b12;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .container {
-            width: 90%;
-            max-width: 500px;
-            text-align: center;
-        }
-
-        .logo {
-            width: 110px;
-            height: 110px;
-            margin: 0 auto 25px;
-            border-radius: 30px;
-            background: linear-gradient(135deg, #6c5ce7, #00cec9);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 42px;
-            font-weight: bold;
-        }
-
-        h1 {
-            font-size: 38px;
-            margin: 0 0 10px;
-        }
-
-        p {
-            color: #aaa;
-            font-size: 16px;
-            margin-bottom: 30px;
-        }
-
-        .button {
-            display: block;
-            width: 100%;
-            padding: 16px;
-            margin: 12px 0;
-            border-radius: 14px;
-            background: #ffffff;
-            color: #111;
-            text-decoration: none;
-            font-size: 17px;
-            font-weight: bold;
-            transition: 0.2s;
-        }
-
-        .button:hover {
-            transform: translateY(-2px);
-            opacity: 0.9;
-        }
-
-        .footer {
-            margin-top: 35px;
-            color: #666;
-            font-size: 13px;
-        }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f4f0e7">
+<title>TYTO — The Keeper of Stories</title>
+<style>
+:root{color-scheme:light;--paper:#f4f0e7;--ink:#24221f;--muted:#777166;--line:#ded8cc;--bronze:#927653}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 Inter,system-ui,-apple-system,sans-serif}
+main{width:min(760px,calc(100% - 36px));margin:0 auto;padding:72px 0}
+header{text-align:center;padding:22px 0 42px}.mark{width:76px;height:76px;margin:0 auto 18px;border:1px solid var(--bronze);border-radius:50%;display:grid;place-items:center;font:32px Georgia,serif;color:var(--bronze)}
+h1{font:500 46px/1 Georgia,serif;letter-spacing:.12em;margin:0} .tag{margin:14px 0 0;color:var(--bronze);font:italic 17px Georgia,serif}
+.intro{max-width:540px;margin:0 auto;color:var(--muted)}
+h2{font:24px Georgia,serif;margin:0 0 16px}
+nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+a.policy{display:block;padding:19px 20px;border:1px solid var(--line);border-radius:14px;color:var(--ink);text-decoration:none;background:#faf8f3;transition:transform .18s,border-color .18s}
+a.policy:hover{transform:translateY(-2px);border-color:var(--bronze)}
+a.policy strong{display:block;font-weight:600}a.policy span{display:block;color:var(--muted);font-size:13px;margin-top:4px}
+footer{text-align:center;color:var(--muted);font-size:13px;margin-top:38px}
+@media(max-width:560px){main{padding:44px 0}h1{font-size:38px}nav{grid-template-columns:1fr}}
+</style>
 </head>
-
 <body>
-
-    <div class="container">
-
-        <div class="logo">
-            PV
-        </div>
-
-        <h1>PanelVerse</h1>
-
-        <p>
-            Your home for Manga, Comics and more.
-        </p>
-
-        <a class="button" href="https://t.me/YOUR_CHANNEL">
-            Manga
-        </a>
-
-        <a class="button" href="https://t.me/YOUR_DC_CHANNEL">
-            DC
-        </a>
-
-        <a class="button" href="https://t.me/YOUR_MARVEL_CHANNEL">
-            Marvel
-        </a>
-
-        <div class="footer">
-            © 2026 PanelVerse
-        </div>
-
-    </div>
-
+<main>
+<header>
+<div class="mark" aria-hidden="true">Τ</div>
+<h1>TYTO</h1>
+<p class="tag">The Keeper of Stories</p>
+<p class="intro">A home for books, comics, manga and stories.<br>خانه‌ای برای داستان‌ها.</p>
+</header>
+<section aria-labelledby="policies">
+<h2 id="policies">Policies &amp; Guidelines</h2>
+<nav>
+<a class="policy" href="PRIVACY.md"><strong>Privacy Policy</strong><span>حریم خصوصی</span></a>
+<a class="policy" href="TERMS.md"><strong>Terms of Service</strong><span>شرایط استفاده</span></a>
+<a class="policy" href="COPYRIGHT.md"><strong>Copyright Policy</strong><span>حقوق آثار و مالکیت فکری</span></a>
+<a class="policy" href="COMMUNITY_GUIDELINES.md"><strong>Community Guidelines</strong><span>قوانین جامعه</span></a>
+<a class="policy" href="DATA_DELETION.md"><strong>Data &amp; Deletion Requests</strong><span>درخواست دسترسی و حذف اطلاعات</span></a>
+</nav>
+<footer>© 2026 TYTO · <a href="https://t.me/titoarchivebot" style="color:inherit">Open Telegram Bot</a></footer>
+</section>
+</main>
 </body>
 </html>
