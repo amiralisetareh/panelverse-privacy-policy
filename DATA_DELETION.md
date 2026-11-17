@@ -1,44 +1,50 @@
-# TYTO Data Deletion and Privacy Requests
+# TYTO Data Deletion Policy
+**Effective date:** 17 November 2026 · **Version:** 1.0  
+**Bot:** [@titoarchivebot](https://t.me/titoarchivebot)
 
-**Effective date:** 17 November 2026  
-**Service:** [@titoarchivebot](https://t.me/titoarchivebot)
+This policy explains what can be deleted in the currently inspected TYTO application and what remains controlled by Telegram or the hosting provider.
 
-This document explains how to request access, correction or deletion of information associated with your use of TYTO.
+## 1. Ordinary bot users
+The inspected application does not create persistent user accounts or store ordinary users' Telegram IDs, profile names, usernames, or message histories in its own database. It therefore has no ordinary-user profile record or in-app personal-data deletion command to run.
 
-## 1. How to submit a request
+You can stop using the bot, block it, and delete the conversation from your Telegram client. This does not erase records that Telegram or its infrastructure providers may independently retain.
 
-Contact the operator through [@titoarchivebot](https://t.me/titoarchivebot). Start your message with one of:
+## 2. Archive content and administrator uploads
+Archive entries and files submitted by administrators are service content, not ordinary user accounts. They may include filenames, technical file metadata, extracted publication metadata, file hashes, and audit records. They may remain in the operator's database and archive-storage directory until an administrator removes them or the service is retired. The inspected build does not define an automatic archive-retention schedule.
 
-- **DATA ACCESS** — ask what personal information may be associated with your interaction.
-- **DATA CORRECTION** — request correction of inaccurate information.
-- **DATA DELETION** — request deletion of personal information where technically and legally possible.
+A request to review or remove archive content should identify the title, archive item ID, file name, and reason. Do not send passwords, bot tokens, identity documents, or unrelated sensitive information.
 
-Include your Telegram numeric user ID if available, the relevant message or item reference, and enough detail to locate the record. Do not send passwords, authentication codes or unnecessary identity documents.
+## 3. Technical logs and third-party data
+Operational logs and hosting-provider records may be kept under the host's configuration. Telegram independently controls information processed by its platform. TYTO cannot directly delete records from Telegram or a hosting provider's systems.
 
-## 2. Verification
+## 4. No private request channel yet
+The operator has not supplied a verified private data-deletion contact. This is an outstanding launch requirement. Add a monitored private email or equivalent contact method before inviting data-rights requests. Do not submit personal information through public GitHub issues or send it to the bot as if an active support workflow existed.
 
-The operator may ask for proportionate information to verify that the request concerns you. Verification details should not be more extensive than reasonably necessary.
-
-## 3. What may be deleted
-
-Depending on the actual deployment and the information identified, the operator may be able to remove or correct relevant records under their control. Archive catalogue records and uploaded files may be subject to separate ownership, licensing, operational or legal considerations.
-
-The current reviewed project code contains archive records, uploaded-file metadata and operational audit logs. It does not establish a complete self-service user-account deletion feature. A request must therefore be reviewed by the operator rather than assuming that a bot command automatically deletes all data.
-
-## 4. Limits
-
-Some information may need to be retained where required by law or reasonably necessary for security, fraud prevention, dispute resolution, rights enforcement or preservation of system integrity. Information held by Telegram or hosting providers is subject to their own processes and policies.
-
-Blocking the bot or deleting a Telegram conversation does not necessarily delete records already stored by the operator or third parties.
-
-## 5. Completion
-
-The operator should confirm receipt and communicate the outcome within a reasonable period, subject to applicable law and the complexity of the request.
-
-## 6. Contact
-
-Submit requests via [@titoarchivebot](https://t.me/titoarchivebot), clearly marking the message with the request type above.
+## 5. What a request should include
+Once a private contact channel is published, a request should include only the minimum information needed to identify the relevant record, such as the archive item ID or title, and a way to receive a response. The operator may ask for proportionate evidence that the requester is authorized to act. Do not send account passwords or authentication tokens.
 
 ---
 
-*This document describes a manual request process. Do not claim automatic or complete deletion until the deployed system implements and verifies it.*
+# سیاست حذف داده در TYTO
+**تاریخ اجرا:** ۱۷ نوامبر ۲۰۲۶ · **نسخه:** ۱٫۰
+
+این سیاست توضیح می‌دهد در نسخه فعلی بررسی‌شده TYTO چه داده‌هایی قابل حذف هستند و کدام داده‌ها تحت کنترل مستقل تلگرام یا شرکت میزبان قرار دارند.
+
+## ۱. کاربران عادی ربات
+برنامه بررسی‌شده حساب کاربری دائمی نمی‌سازد و شناسه تلگرام، نام پروفایل، نام کاربری یا تاریخچه پیام کاربران عادی را در پایگاه داده خود ذخیره نمی‌کند. بنابراین برای کاربران عادی رکورد پروفایل دائمی یا فرمان حذف خودکار اطلاعات شخصی درون برنامه وجود ندارد.
+
+می‌توانید استفاده از ربات را متوقف کنید، آن را مسدود کنید و گفتگو را از برنامه تلگرام خود حذف کنید. این کار سوابقی را که تلگرام یا ارائه‌دهندگان زیرساخت آن مستقلاً نگهداری می‌کنند حذف نمی‌کند.
+
+## ۲. محتوای آرشیو و فایل‌های مدیران
+موارد آرشیو و فایل‌هایی که مدیران ارسال می‌کنند، محتوای سرویس هستند و حساب کاربری عادی محسوب نمی‌شوند. این موارد ممکن است شامل نام فایل، فراداده فنی، فراداده استخراج‌شده از اثر، هش فایل و سوابق مدیریتی باشند. این اطلاعات ممکن است تا زمان حذف توسط مدیر یا پایان فعالیت سرویس در پایگاه داده و پوشه ذخیره‌سازی آرشیو باقی بمانند. نسخه بررسی‌شده برنامه زمان‌بندی خودکار برای حذف آرشیو ندارد.
+
+درخواست بررسی یا حذف محتوای آرشیو باید عنوان، شناسه مورد، نام فایل و دلیل درخواست را مشخص کند. گذرواژه، توکن ربات، توکن پنل، مدارک هویتی یا اطلاعات حساس نامرتبط ارسال نکنید.
+
+## ۳. گزارش‌های فنی و سرویس‌دهندگان ثالث
+گزارش‌های عملیاتی و سوابق شرکت میزبان ممکن است طبق تنظیمات همان شرکت نگهداری شوند. تلگرام مستقلاً اطلاعات پردازش‌شده در پلتفرم خود را کنترل می‌کند. TYTO امکان حذف مستقیم سوابق از سامانه‌های تلگرام یا شرکت میزبان را ندارد.
+
+## ۴. نبود راه خصوصی درخواست
+مالک پروژه هنوز راه ارتباطی خصوصی و تأییدشده‌ای برای درخواست حذف داده معرفی نکرده است. این مورد باید پیش از انتشار عمومی تکمیل شود. پیش از دعوت کاربران به ثبت درخواست حقوق داده، یک ایمیل خصوصی فعال یا روش تماس معادل درج شود. اطلاعات شخصی را از طریق Issues عمومی GitHub ارسال نکنید و تصور نکنید که ربات در حال حاضر فرایند پشتیبانی فعال دارد.
+
+## ۵. اطلاعات لازم برای درخواست
+پس از انتشار راه ارتباطی خصوصی، درخواست باید فقط حداقل اطلاعات لازم برای شناسایی رکورد مربوط، مانند شناسه یا عنوان مورد آرشیو، و راهی برای دریافت پاسخ را شامل شود. گرداننده می‌تواند مدرک متناسبی برای بررسی اختیار درخواست‌کننده بخواهد. گذرواژه حساب یا توکن احراز هویت را ارسال نکنید.
