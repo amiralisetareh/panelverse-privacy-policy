@@ -1,30 +1,37 @@
 # TYTO — Policies & Legal
 
 **The Keeper of Stories**  
-A Telegram archive and discovery bot for books, comics, manga and related media.
+Official policy documents for [@titoarchivebot](https://t.me/titoarchivebot), previously known as PanelVerse.  
+**Effective date:** 17 November 2026 · **Version:** 1.0
 
-This repository contains the public policy documents for [@titoarchivebot](https://t.me/titoarchivebot).
-
-## Documents
-
-- [Privacy Policy](PRIVACY.md)
-- [Terms of Service](TERMS.md)
-- [Copyright and Rights Policy](COPYRIGHT.md)
+## Canonical documents
+- [Privacy Policy](PRIVACY_POLICY.md)
+- [Terms of Service](TERMS_OF_SERVICE.md)
+- [Copyright & Rights Policy](COPYRIGHT_POLICY.md)
 - [Community Guidelines](COMMUNITY_GUIDELINES.md)
 - [Data Deletion Policy](DATA_DELETION.md)
 
-## Important scope note
+The short legacy files `PRIVACY.md`, `TERMS.md`, and `COPYRIGHT.md` remain as pointers to the canonical documents.
 
-These documents were drafted against the currently reviewed PanelVerse v2 codebase, which is being rebranded as TYTO. The reviewed implementation includes a Telegram bot, an SQLite archive, administrator-controlled file ingestion, operational audit records and optional Telegram publication.
+## Scope verified against source
+These documents were drafted after inspecting `amiralisetareh/panelverse_v2` on 17 November 2026. The inspected build:
+- does not create persistent accounts for ordinary bot users or store their profile/message history in its own SQLite database;
+- stores catalogue records and administrator-managed archive content;
+- stores files and technical/extracted metadata through the protected web-admin ingestion workflow;
+- uses Telegram identifiers for administrator authorization and keeps temporary admin workflow state in process memory;
+- shows an AI assistant placeholder, but does not implement active AI conversations.
 
-The documents deliberately do not claim that user accounts, reading-history tracking, automated user deletion or end-to-end encryption exist. Update the policies whenever the deployed code, hosting, logging, analytics, storage, publication channels or third-party integrations change.
+The operator must keep the documents aligned with the actual deployed build.
 
-## Effective date
+## Launch checklist
+- [ ] Add a verified, monitored private privacy/support contact to the policies and bot profile.
+- [ ] Add a private copyright-report contact; never direct rights holders to post personal information in public GitHub issues.
+- [ ] Verify the public GitHub Pages URL and use the direct privacy-policy page in BotFather.
+- [ ] Confirm the production deployment matches the inspected source.
+- [ ] Serve the admin interface over HTTPS and never commit bot/admin tokens.
+- [ ] Update the policies before enabling AI processing, analytics, user accounts, public uploads, comments, payments, or new third-party services.
 
-17 November 2026.
+## Important
+This repository is a public transparency resource, not legal advice or a statement of compliance with any particular jurisdiction. Obtain legal review for the operator's location and intended audience before relying on it as a complete legal framework.
 
-## Contact
-
-Telegram: [@titoarchivebot](https://t.me/titoarchivebot)
-
-*These documents are a practical product-policy starting point and are not legal advice. The operator should obtain jurisdiction-specific legal review before commercial launch.*
+A verified private contact was not provided, so the policy documents explicitly mark that as a launch requirement rather than inventing an address.
